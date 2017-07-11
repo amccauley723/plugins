@@ -514,11 +514,9 @@
                         <p class="heading">Quick Doctor Search</p>
                         <p>Type a condition, name, specialty, or location.</p>
                         <div class="doc-form-container">
-                            <form id="doctor-test-form" name="doctor-test-form">
                                 <input class="test-input" id="docSearchInput"  name="docSearchInput" placeholder="Search"
                                        title="search text box" type="text"/>
                                 <button class="doc-test-button" type="submit">SEARCH</button>
-                            </form>
                         </div>
                     </li>
                     <li>
@@ -588,10 +586,8 @@
             <li><a href="/MyMarshfieldClinic">Sign In/Register</a></li>
         </ul>
         <div class="new-form-container">
-            <form id="header-test-form" name="header-test-form">
                 <input class="test-input" id="newSearchInput" name="newSearchInput" placeholder="Search" title="search text box" type="text"/>
                 <button class="header-test-button" type="submit">SEARCH</button>
-            </form>
         </div>
     </nav>
     <div class="new-quick-tasks"><a href="/care-my-way">contact care my way</a><a href="/Patient-Resources/billing">pay
@@ -601,8 +597,6 @@
 <!-- END NEW HEADER -->
 
 <script type="text/javascript">
-setTimeout(function(){
-
     $("a[href^='#']").off();
     $('html').click(function () {
         $('.top-level-nav > li.hasKids.active').removeClass('active');
@@ -642,8 +636,6 @@ setTimeout(function(){
             window.location = '/doctors/search/?k=' + $('#docSearchInput').val();
         }
     });
-
-}, 500);
 </script>
 </body>
 </html>
