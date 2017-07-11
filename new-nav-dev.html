@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <style>
+
+        /* remove old navigation */
+        /*.topNavRel span.logo, .topNavRel .secondaryNav, .navigation.gradient {*/
+            /*display: none !important;*/
+        /*}*/
+        /* set new header padding for content (fixed header) */
+        /*.topSpacer {*/
+            /*height: 220px !important;*/
+        /*}*/
+        /*.logo-link {*/
+            /*text-decoration: none !important;*/
+        /*}*/
+        .all-the-header {
+            width: 100%;
+            background: #f6f1e5;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            font-family: 'Roboto', sans-serif !important;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        #test-logo {
+            width: 120px;
+            height: 120px;
+            background: url(https://s-media-cache-ak0.pinimg.com/originals/14/24/6e/14246e3d1370849f6f119910006be929.jpg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: inline-block !important;
+            margin: 20px;
+        }
+
+        #primary_nav_wrap {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #primary_nav_wrap ul {
+            list-style: none;
+            float: left;
+            margin: 0;
+            padding: 25px 0 0;
+        }
+
+        #primary_nav_wrap ul li > a {
+            display: block;
+            color: #000000;
+            text-decoration: none;
+            font-weight: 100;
+            font-size: 20px;
+            line-height: 32px;
+            padding: 0 15px;
+        }
+
+        #primary_nav_wrap ul li {
+            float: left;
+        }
+
+        #primary_nav_wrap ul li:last-child {
+            border-right: none;
+        }
+
+        #primary_nav_wrap ul li.current-menu-item {
+            background: #ddd;
+        }
+
+        #primary_nav_wrap ul ul {
+            display: none;
+            position: absolute;
+            top: 77px;
+            left: 164px;
+            right: 15%;
+            padding: 40px;
+            background: white;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+            border-bottom-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border-top: 3px solid #179caa;
+        }
+
+        #primary_nav_wrap ul ul ul {
+            border-top: 3px solid #e3e3e3;
+        }
+
+        #primary_nav_wrap ul ul ul:hover {
+            border-top: 3px solid #179caa;
+        }
+
+        #primary_nav_wrap ul ul li {
+            float: none;
+            display: inline-block;
+        }
+
+        #primary_nav_wrap ul ul a {
+            line-height: 120%;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        #primary_nav_wrap ul li.locations ul a:hover {
+            text-decoration: underline;
+        }
+
+        #primary_nav_wrap ul ul ul {
+            /*top: 0;*/
+            /*left: 100%;*/
+            display: inline-block;
+            position: relative;
+            width: 200px;
+            left: 0;
+            right: 0;
+            top: 0;
+            box-shadow: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #primary_nav_wrap ul li.active > ul {
+            display: block;
+        }
+
+        #primary_nav_wrap ul ul.explore li {
+            display: block;
+            margin: 0 0 20px 0;
+            border-left: 3px solid #e3e3e3;
+            padding: 0 20px;
+            transition: 0.10s;
+
+        }
+
+        #primary_nav_wrap ul ul.explore li:hover {
+            border-left: 3px solid #179caa;
+            margin-left: 5px;
+            transition: 0.10s;
+        }
+
+        li.dir.locations {
+            width: 32.33%;
+            box-sizing: border-box;
+        }
+
+        #primary_nav_wrap .heading {
+            font-size: 18px !important;
+            text-transform: uppercase;
+            margin: 0 !important;
+            padding: 10px 0 !important;
+            color: black;
+            font-weight: 300;
+        }
+
+        #primary_nav_wrap ul ul li ul li {
+            /* float: none; */
+            width: 100%;
+            display: block;
+        }
+
+        li.hasKids.active {
+            background: #179caa;
+        }
+
+        li.hasKids.active > a {
+            color: #ffffff !important;
+        }
+
+        ul.top-level-nav > li {
+            margin: 0;
+            padding: 15px 0;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+
+        ul.explore p, .findADoctor p {
+            margin: 0;
+            font-size: 14px !important;
+            font-weight: 100;
+        }
+
+        li.hasKids > a:after {
+            content: "+";
+            margin-left: 10px;
+            display: inline-block;
+            min-width: 12px;
+        }
+
+        li.hasKids.active > a:after {
+            content: "-";
+            margin-left: 10px;
+            display: inline-block;
+        }
+
+        /*search elements*/
+        .new-form-container {
+            display: block;
+            clear: both;
+            margin: 0 0 0 15px;
+            box-sizing: border-box;
+        }
+
+        .new-form-container input {
+            display: inline-block;
+            padding: 14px !important;;
+            border-radius: 4px;
+            font-size: 14px;
+            width: 79%;
+            background: url(http://www.endlessicons.com/wp-content/uploads/2015/08/search-icon-2.png) #fff;
+            background-size: 60px;
+            background-position: 100%;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            border: 1px solid #e3e3e3;
+        }
+
+        .new-form-container button[type="submit"] {
+            border-radius: 4px;
+            padding: 8px;
+            height: 46px;
+            margin: 0 0 0 14px;
+            width: 15%;
+            background: #179caa;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #fff;
+            border: none;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        .new-form-container button[type="submit"]:hover {
+            transition: 0.15s;
+            background: #11737d;
+        }
+
+        .doc-form-container {
+            display: inline-block;
+            clear: both;
+            margin: 20px 0 20px 0;
+            box-sizing: border-box;
+            width: 100%;
+            padding-right: 30px;
+        }
+
+        .doc-form-container input {
+            display: inline-block;
+            padding: 14px !important;
+            border-radius: 4px;
+            font-size: 14px;
+            width: 80%;
+            background: url(http://www.endlessicons.com/wp-content/uploads/2015/08/search-icon-2.png) #fff;
+            background-size: 60px;
+            background-position: 100%;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            border: 1px solid #e3e3e3;
+        }
+
+        .doc-form-container button[type="submit"] {
+            border-radius: 4px;
+            padding: 8px;
+            height: 46px;
+            margin: 0 0 0 14px;
+            width: 14%;
+            background: #179caa;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #fff;
+            border: none;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        .doc-form-container button[type="submit"]:hover {
+            transition: 0.15s;
+            background: #11737d;
+        }
+
+        .findADoctor li {
+            margin-right: 30px;
+            vertical-align: top;
+            display: block !important;
+        }
+        .home-specialties {
+            width: 100% !important;
+        }
+        .home-specialties li {
+            display: inline-block !important;
+            width: 27% !important;
+        }
+        .home-specialties li > a:hover {
+            text-decoration: underline !important;
+        }
+
+        /*quick task elements*/
+        .new-quick-tasks {
+            background: #404040;
+        }
+
+        .new-quick-tasks a {
+            transition: 0.10s;
+            color: #ffffff;
+            text-transform: uppercase;
+            box-sizing: border-box;
+            width: 33.33%;
+            display: inline-block;
+            line-height: 60px;
+            text-align: center;
+            border-right: 1px solid #848484;
+            white-space: nowrap;
+            text-decoration: none;
+            font-size: 1em;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+        }
+
+        .new-quick-tasks a:hover {
+            background: #179CB3;
+        }
+
+        .new-quick-tasks a:visited {
+            color: white;
+        }
+
+        .new-quick-tasks a:last-child {
+            border-right: none;
+        }
+
+        @media screen and (max-width: 930px) {
+            #primary_nav_wrap ul ul li {
+                width: 100%;
+            }
+
+            #test-logo {
+                width: 60px;
+                height: 75px;
+                background-size: cover;
+                background-position: 0 29px;
+                display: inline-block !important;
+                margin: 20px 0 20px 20px;
+            }
+
+            #primary_nav_wrap {
+                margin-bottom: 30px;
+            }
+
+            #primary_nav_wrap ul ul {
+                left: 0;
+                right: 0;
+            }
+            .brandImage {
+                padding-top: 220px !important;
+            }
+        }
+
+        @media screen and (max-width: 820px) {
+            #test-logo {
+                display: none !important;
+            }
+        }
+
+        @media screen and (min-width: 760px) {
+            .topSpacer {
+                height: 220px !important;
+            }
+        }
+        @media screen and (max-height: 900px) {
+            .all-the-header {
+                position: absolute !important;
+            }
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<!-- START NEW HEADER -->
+
+<div class="all-the-header">
+    <a class="logo-link" href="https://www.marshfieldclinic.org/">
+        <div id="test-logo"></div>
+    </a>
+    <nav id="primary_nav_wrap">
+        <ul class="top-level-nav">
+            <li class="hasKids"><a href="#">Explore</a>
+                <ul class="explore">
+                    <li><a class="heading" href="/Patient-Resources/billing">Pay your bill</a>
+                        <p>Use our Quick Pay system, log into My Marshfield Clinic, or get the address to mail in a
+                            payment</p>
+                    </li>
+                    <li><a class="heading" href="/careers">Careers</a>
+                        <p>Join a world-class health care system</p>
+                    </li>
+                    <li><a class="heading" href="/referral-center">Refer a patient</a>
+                        <p>MC CARES provides same day transfers and referrals to any hospital.</p>
+                    </li>
+                    <li><a class="heading" href="/patient-resources">Patient Resources</a>
+                        <p>Access appointments, medical records, bills and financial assistance</p>
+                    </li>
+                    <li><a target="_blank" class="heading" href="http://shine365.marshfieldclinic.org/">Our Blog -
+                        Shine365</a>
+                        <p>Get wellness and healthy living advice every day</p>
+                    </li>
+                    <li><a class="heading" href="/specialties">Specialties</a>
+                        <p>Learn about medical care in more than 80 specialties</p>
+                    </li>
+                    <li><a class="heading" href="/health-library">Health Library</a>
+                        <p>Find answers to health questions, symptoms and medications</p>
+                    </li>
+                    <li><a class="heading" href="/giving">Giving</a>
+                        <p>Support our mission with a gift or by attending an event</p>
+                    </li>
+                    <li><a class="heading" href="/news">Newsroom</a>
+                        <p>Follow us in the news to see how we’re changing health care</p>
+                    </li>
+                    <li><a class="heading" href="/professionals">Medical </a>
+                        <p>Make a patient referral, access medical education and research</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="hasKids"><a href="#">Locations</a>
+                <ul>
+                    <!--URGENT CARE LINKS-->
+                    <li class="dir locations"><a class="heading" href="#">Urgent Care</a>
+                        <ul>
+                            <li>
+                                <a href="/locations/centers/eau claire center"><span>Eau Claire Center</a>
+                            </li>
+                            <li>
+                                <a href="/locations/centers/minocqua center"><span>Minocqua Center</a>
+                            </li>
+                            <li>
+                                <a href="/locations/centers/ladysmith center">Ladysmith Center</a>
+                            </li>
+                            <li>
+                                <a href="/locations/centers/rice lake center">Rice Lake Center</a>
+                            </li>
+                            <li>
+                                <a href="/locations/centers/lake hallie center">Lake Hallie Center</a>
+                            </li>
+                            <li>
+                                <a href="/locations/centers/wausau center">Wausau Center</a>
+                            </li>
+                            <li>
+                                <a href="https://www.lakeviewmedical.com" target="_blank">Lakeview Medical Center</a>
+                            </li>
+                            <li>
+                                <a href="/locations/centers/weston center">Weston Center</a>
+                            </li>
+                            <li>
+                                <a href="/locations/centers/marshfield center">Marshfield Center</a>
+                            </li>
+                            <li>
+                                <a href="/locations/centers/wisconsin rapids center">Wisconsin Rapids Center</span> </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--HOSPITALS LINKS-->
+                    <li class="dir locations"><a class="heading" href="#">Hospitals</a>
+                        <ul>
+                            <li>
+                                <a href="/locations/centers/marshfield%20medical%20center">Marshfield Medical Center</a>
+                            </li>
+                            <li>
+                                <a href="/locations/centers/children's%20hospital">Marshfield Children's Hospital</a>
+                            </li>
+                            <li>
+                                <a href="http://ministryhealth.org/FH/home.nws" target="_blank">Flambeau Hospital - Park
+                                    Falls</a>
+                            </li>
+                            <li>
+                                <a href="https://www.lakeviewmedical.com" target="_blank">Lakeview Medical Center - Rice
+                                    Lake</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--CLINIC LINKS-->
+                    <li class="dir locations"><a class="heading" href="#">Clinics</a>
+                        <ul>
+                            <li>
+                                <a href="/locations/centers/eau claire center">Eau Claire Center</a>
+                            </li>
+                            <li>
+                                <a href="/locations/centers/wausau center">Wausau Center</a>
+                            </li>
+                            <li>
+                                <a href="/locations/centers/marshfield center">Marshfield Center</a>
+                            </li>
+                            <li>
+                                <a href="/locations/centers/weston center">Weston Center</a>
+                            </li>
+                            <li>
+                                <a href="/locations/centers/stevens point center">Stevens Point Center</a>
+                            </li>
+                            <li>
+                                <a href="/locations#clinics">See all &gt;</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="hasKids"><a href="#">Doctors</a>
+                <ul class="findADoctor">
+                    <li>
+                        <p class="heading">Quick Doctor Search</p>
+                        <p>Type a condition, name, specialty, or location.</p>
+                        <div class="doc-form-container">
+                            <form id="doctor-test-form" name="doctor-test-form">
+                                <input class="test-input" id="docSearchInput"  name="docSearchInput" placeholder="Search"
+                                       title="search text box" type="text"/>
+                                <button class="doc-test-button" type="submit">SEARCH</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="heading">Select a specialty</p>
+                        <ul class="home-specialties">
+                            <li><a href="/Doctors/Search/?k=Allergy and Asthma">Allergy and Asthma</a>
+                                <a href="/Doctors/Search/?k=Anesthesia">Anesthesia</a>
+                                <a href="/Doctors/Search/?k=Audiology">Audiology</a>
+                                <a href="/Doctors/Search/?k=Bariatric Surgery">Bariatric Surgery</a>
+                                <a href="/Doctors/Search/?k=Cardiology">Cardiology (Heart Care)</a>
+                                <a href="/Doctors/Search/?k=Dental">Dental</a>
+                                <a href="/Doctors/Search/?k=Dermatology">Dermatology</a>
+                                <a href="/Doctors/Search/?k=Ear Nose and Throat (ENT)">Ear Nose and Throat (ENT)</a>
+                                <a href="/Doctors/Search/?k=Emergency Medicine">Emergency Medicine</a>
+                                <a href="/Doctors/Search/?k=Endocrinology">Endocrinology (Diabetes and
+                                    Metabolism)</a>
+                                <a href="/Doctors/Search/?k=Family Medicine">Family Medicine</a>
+                                <a href="/Doctors/Search/?k=Gastroenterology">Gastroenterology (Digestive Care)</a>
+                                <a href="/Doctors/Search/?k=General Surgery">General Surgery</a>
+                                <a href="/Doctors/Search/?k=Genetic Services">Genetic Services</a>
+                                <a href="/Doctors/Search/?k=Hospitalist">Hospitalists (Hospital Care)</a>
+                            </li>
+                            <li>
+                                <a href="/Doctors/Search/?k=Infectious Diseases">Infectious Diseases</a>
+                                <a href="/Doctors/Search/?k=Internal Medicine">Internal Medicine</a>
+                                <a href="/Doctors/Search/?k=Nephrology">Nephrology (Kidney Care)</a>
+                                <a href="/Doctors/Search/?k=Neurology">Neurosciences (Neurology)</a>
+                                <a href="/Doctors/Search/?k=Obstetrics and Gynecology">Obstetrics and Gynecology
+                                    (OB/GYN)</a>
+                                <a href="/Doctors/Search/?k=Occupational Health">Occupational Health</a>
+                                <a href="/Doctors/Search/?k=Oncology">Oncology (Cancer Care)</a>
+                                <a href="/Doctors/Search/?k=Ophthalmology and Optometry">Ophthalmology and Optometry
+                                    (Eye Care)</a>
+                                <a href="/Doctors/Search/?k=Oral and Maxillofacial Surgery">Oral and
+                                    Maxillofacial Surgery</a>
+                                <a href="/Doctors/Search/?k=Orthopedic Surgery">Orthopedic
+                                    Surgery</a>
+                                <a href="/Doctors/Search/?k=Pain Management">Pain Management</a>
+                                <a href="/Doctors/Search/?k=Palliative Care">Palliative Medicine</a>
+                                <a href="/Doctors/Search/?k=Pediatrics">Pediatrics</a>
+                                <a href="/Doctors/Search/?k=Physical and Occupational Therapy">Physical and
+                                    Occupational Therapy</a>
+                                <a href="/Doctors/Search/?k=Physical Medicine and Rehabilitation">Physical Medicine and
+                                    Rehabilitation</a>
+                            </li>
+                            <li>
+                                <a href="/Doctors/Search/?k=Plastic and Cosmetic Surgery">Plastic and Cosmetic
+                                    Surgery</a>
+                                <a href="/Doctors/Search/?k=Podiatry">Podiatry</a>
+                                <a href="/Doctors/Search/?k=Primary Care">Primary Care</a>
+                                <a href="/Doctors/Search/?k=Psychiatry and Psychology">Psychiatry and Psychology</a>
+                                <a href="/Doctors/Search/?k=Pulmonary Medicine">Pulmonary Medicine (Lung Care)</a>
+                                <a href="/Doctors/Search/?k=Radiology">Radiology</a>
+                                <a href="/Doctors/Search/?k=Rheumatology">Rheumatology and Arthritis Care</a>
+                                <a href="/Doctors/Search/?k=Sleep Medicine">Sleep Medicine</a>
+                                <a href="/Doctors/Search/?k=Sports Medicine">Sports Medicine</a>
+                                <a href="/Doctors/Search/?k=Urgent Care">Urgent Care</a>
+                                <a href="/Doctors/Search/?k=Urology">Urology</a>
+                                <a href="/Doctors/Search/?k=Vascular Surgery">Vascular Surgery</a>
+                                <a href="/Doctors/Search/?k=Wound Healing">Wound Healing</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="/appointments">Request Appointment</a></li>
+            <li><a href="/MyMarshfieldClinic">Sign In/Register</a></li>
+        </ul>
+        <div class="new-form-container">
+            <form id="header-test-form" name="header-test-form">
+                <input class="test-input" id="newSearchInput" name="newSearchInput" placeholder="Search" title="search text box" type="text"/>
+                <button class="header-test-button" type="submit">SEARCH</button>
+            </form>
+        </div>
+    </nav>
+    <div class="new-quick-tasks"><a href="/care-my-way">contact care my way</a><a href="/Patient-Resources/billing">pay
+        a bill</a><a href="/renewprescription">refill prescriptions</a></div>
+</div>
+
+<!-- END NEW HEADER -->
+
+<script type="text/javascript">
+setTimeout(function(){
+
+    $("a[href^='#']").off();
+    $('html').click(function () {
+        $('.top-level-nav > li.hasKids.active').removeClass('active');
+    });
+
+    $('.top-level-nav').click(function (event) {
+        event.stopPropagation();
+    });
+    $('.top-level-nav > li.hasKids > a').click(function (event) {
+        var $clickedLi = $(this);
+        $clickedLi.parent().siblings().removeClass('active');
+        if ($clickedLi.parent().hasClass('active')) {
+            $clickedLi.parent().removeClass('active');
+        } else {
+            $clickedLi.parent().addClass('active');
+        }
+    });
+
+    $(document).on('click', '.header-test-button', function(event){
+        event.preventDefault();
+        window.location = '/Search/?k=' + $('#newSearchInput').val();
+    });
+    $(document).on('keyup', '#newSearchInput', function(event){
+        event.preventDefault();
+        if(event.keyCode === '13'){
+            window.location = '/Search/?k=' + $('#newSearchInput').val();
+        }
+    });
+
+    $(document).on('click', '.doc-test-button', function(event){
+        event.preventDefault();
+        window.location = '/doctors/search/?k=' + $('#docSearchInput').val();
+    });
+    $(document).on('keyup', '#docSearchInput', function(event){
+        event.preventDefault();
+        if(event.keyCode === '13'){
+            window.location = '/doctors/search/?k=' + $('#docSearchInput').val();
+        }
+    });
+
+}, 500);
+</script>
+</body>
+</html>
