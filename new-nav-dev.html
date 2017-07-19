@@ -539,7 +539,7 @@
                         <p class="heading">Quick Doctor Search</p>
                         <p>Type a condition, name, specialty, or location.</p>
                         <div class="doc-form-container">
-                            <input class="test-input" id="docSearchInput" name="docSearchInput" placeholder="Search"
+                            <input class="test-input" id="docSearchInput" name="docSearchInputField" placeholder="Search"
                                    title="search text box" type="text"/>
                             <button id="docSearchButton" class="doc-test-button" type="submit">SEARCH</button>
                         </div>
@@ -631,27 +631,43 @@
         }
     });
 
-    $(document).on('click', '.header-test-button', function (event) {
+    $('#docSearchButton').click(function (event) {
         event.preventDefault();
-        window.location = '/Search/?k=' + $('#newSearchInput').val();
+        console.log(event);
+        if($('#docSearchInput').val() !== ''){
+            window.location = '/doctors/search/?k=' + $('#docSearchInput').val();
+        }
+
+    });
+
+    $('#docSearchInput').click(function(){
+        $(this).val('');
+    });
+    $(document).on('keyup', '#docSearchInput', function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13 && $('#docSearchInput').val() !== '') {
+            window.location = '/doctors/search/?k=' + $('#docSearchInput').val();
+        }
+    });
+
+    $('.header-test-button').click(function (event) {
+        event.preventDefault();
+        if($('#newSearchInput').val() !== ''){
+            window.location = '/Search/?k=' + $('#newSearchInput').val();
+        }
+
+    });
+    $('#newSearchInput').click(function(){
+        $(this).val('');
     });
     $(document).on('keyup', '#newSearchInput', function (event) {
         event.preventDefault();
-        if (event.keyCode === '13') {
+        if (event.keyCode === 13 && $('#newSearchInput').val() !== '') {
             window.location = '/Search/?k=' + $('#newSearchInput').val();
         }
     });
 
-    $(document).on('click', '.doc-test-button', function (event) {
-        event.preventDefault();
-        window.location = '/doctors/search/?k=' + $('#docSearchInput').val();
-    });
-    $(document).on('keyup', '#docSearchInput', function (event) {
-        event.preventDefault();
-        if (event.keyCode === '13') {
-            window.location = '/doctors/search/?k=' + $('#docSearchInput').val();
-        }
-    });
+
 </script>
 </body>
 </html>
