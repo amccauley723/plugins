@@ -5,18 +5,6 @@
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
     <style>
-
-        /* remove old navigation */
-        /*.topNavRel span.logo, .topNavRel .secondaryNav, .navigation.gradient {*/
-            /*display: none !important;*/
-        /*}*/
-        /* set new header padding for content (fixed header) */
-        /*.topSpacer {*/
-            /*height: 220px !important;*/
-        /*}*/
-        /*.logo-link {*/
-            /*text-decoration: none !important;*/
-        /*}*/
         .all-the-header {
             width: 100%;
             background: #f6f1e5;
@@ -288,13 +276,16 @@
             vertical-align: top;
             display: block !important;
         }
+
         .home-specialties {
             width: 100% !important;
         }
+
         .home-specialties li {
             display: inline-block !important;
             width: 27% !important;
         }
+
         .home-specialties li > a:hover {
             text-decoration: underline !important;
         }
@@ -355,6 +346,7 @@
                 left: 0;
                 right: 0;
             }
+
             .brandImage {
                 padding-top: 220px !important;
             }
@@ -371,6 +363,7 @@
                 height: 220px !important;
             }
         }
+
         @media screen and (max-height: 900px) {
             .all-the-header {
                 position: absolute !important;
@@ -385,219 +378,232 @@
 <!-- START NEW HEADER -->
 
 <div class="all-the-header">
-    <a class="logo-link" href="https://www.marshfieldclinic.org/">
+    <a id="globalNav-siteLogo" class="logo-link" href="https://www.marshfieldclinic.org/">
         <div id="test-logo"></div>
     </a>
     <nav id="primary_nav_wrap">
         <ul class="top-level-nav">
-            <li class="hasKids"><a href="#">Explore</a>
+            <li class="hasKids"><a id="globalNav-exploreButton" href="#">Explore</a>
                 <ul class="explore">
-                    <li><a class="heading" href="/Patient-Resources/billing">Pay your bill</a>
+                    <li><a id="globalNav-billing" class="heading" href="/Patient-Resources/billing">Pay your bill</a>
                         <p>Use our Quick Pay system, log into My Marshfield Clinic, or get the address to mail in a
                             payment</p>
                     </li>
-                    <li><a class="heading" href="/careers">Careers</a>
+                    <li><a id="globalNav-careers" class="heading" href="/careers">Careers</a>
                         <p>Join a world-class health care system</p>
                     </li>
-                    <li><a class="heading" href="/referral-center">Refer a patient</a>
+                    <li><a id="globalNav-referralCenter" class="heading" href="/referral-center">Refer a patient</a>
                         <p>MC CARES provides same day transfers and referrals to any hospital.</p>
                     </li>
-                    <li><a class="heading" href="/patient-resources">Patient Resources</a>
+                    <li><a id="globalNav-pateintResources" class="heading" href="/patient-resources">Patient
+                        Resources</a>
                         <p>Access appointments, medical records, bills and financial assistance</p>
                     </li>
-                    <li><a target="_blank" class="heading" href="http://shine365.marshfieldclinic.org/">Our Blog -
+                    <li><a id="globalNav-shine365" target="_blank" class="heading"
+                           href="http://shine365.marshfieldclinic.org/">Our Blog -
                         Shine365</a>
                         <p>Get wellness and healthy living advice every day</p>
                     </li>
-                    <li><a class="heading" href="/specialties">Specialties</a>
+                    <li><a id="globalNav-specialties" class="heading" href="/specialties">Specialties</a>
                         <p>Learn about medical care in more than 80 specialties</p>
                     </li>
-                    <li><a class="heading" href="/health-library">Health Library</a>
+                    <li><a id="globalNav-healthLibrary" class="heading" href="/health-library">Health Library</a>
                         <p>Find answers to health questions, symptoms and medications</p>
                     </li>
-                    <li><a class="heading" href="/giving">Giving</a>
+                    <li><a id="globalNav-giving" class="heading" href="/giving">Giving</a>
                         <p>Support our mission with a gift or by attending an event</p>
                     </li>
-                    <li><a class="heading" href="/news">Newsroom</a>
+                    <li><a id="globalNav-news" class="heading" href="/news">Newsroom</a>
                         <p>Follow us in the news to see how we’re changing health care</p>
                     </li>
-                    <li><a class="heading" href="/professionals">Medical </a>
+                    <li><a id="globalNav-professionals" class="heading" href="/professionals">Medical </a>
                         <p>Make a patient referral, access medical education and research</p>
                     </li>
                 </ul>
             </li>
-            <li class="hasKids"><a href="#">Locations</a>
+            <li class="hasKids"><a id="globalNav-locationsButton" href="#">Locations</a>
                 <ul>
                     <!--URGENT CARE LINKS-->
-                    <li class="dir locations"><a class="heading" href="#">Urgent Care</a>
+                    <li class="dir locations"><a id="globalNav-urgentCareHeading" class="heading" href="#">Urgent
+                        Care</a>
                         <ul>
                             <li>
-                                <a href="/locations/centers/eau claire center"><span>Eau Claire Center</a>
+                                <a id="globalNav-urgentCare-eauClaireCenter"
+                                   href="/locations/centers/eau claire center"><span>Eau Claire Center</a>
                             </li>
                             <li>
-                                <a href="/locations/centers/minocqua center"><span>Minocqua Center</a>
+                                <a id="globalNav-urgentCare-minoquaCenter"
+                                   href="/locations/centers/minocqua center"><span>Minocqua Center</a>
                             </li>
                             <li>
-                                <a href="/locations/centers/ladysmith center">Ladysmith Center</a>
+                                <a id="globalNav-urgentCare-ladysmithCenter" href="/locations/centers/ladysmith center">Ladysmith
+                                    Center</a>
                             </li>
                             <li>
-                                <a href="/locations/centers/rice lake center">Rice Lake Center</a>
+                                <a id="globalNav-urgentCare-riceLakeCenter" href="/locations/centers/rice lake center">Rice
+                                    Lake Center</a>
                             </li>
                             <li>
-                                <a href="/locations/centers/lake hallie center">Lake Hallie Center</a>
+                                <a id="globalNav-urgentCare-lakeHailieCenter"
+                                   href="/locations/centers/lake hallie center">Lake Hallie Center</a>
                             </li>
                             <li>
-                                <a href="/locations/centers/wausau center">Wausau Center</a>
+                                <a id="globalNav-urgentCare-wausauCenter" href="/locations/centers/wausau center">Wausau
+                                    Center</a>
                             </li>
                             <li>
-                                <a href="https://www.lakeviewmedical.com" target="_blank">Lakeview Medical Center</a>
+                                <a id="globalNav-urgentCare-lakeviewMedicalCenter"
+                                   href="https://www.lakeviewmedical.com" target="_blank">Lakeview Medical Center</a>
                             </li>
                             <li>
-                                <a href="/locations/centers/weston center">Weston Center</a>
+                                <a id="globalNav-urgentCare-westonCenter" href="/locations/centers/weston center">Weston
+                                    Center</a>
                             </li>
                             <li>
-                                <a href="/locations/centers/marshfield center">Marshfield Center</a>
+                                <a id="globalNav-urgentCare-marshfieldCenter"
+                                   href="/locations/centers/marshfield center">Marshfield Center</a>
                             </li>
                             <li>
-                                <a href="/locations/centers/wisconsin rapids center">Wisconsin Rapids Center</span> </a>
+                                <a id="globalNav-urgentCare-wisconsinRapidsCenter"
+                                   href="/locations/centers/wisconsin rapids center">Wisconsin Rapids Center</span> </a>
                             </li>
                         </ul>
                     </li>
                     <!--HOSPITALS LINKS-->
-                    <li class="dir locations"><a class="heading" href="#">Hospitals</a>
+                    <li class="dir locations"><a id="globalNav-hospitalsHeading" class="heading" href="#">Hospitals</a>
                         <ul>
                             <li>
-                                <a href="/locations/centers/marshfield%20medical%20center">Marshfield Medical Center</a>
+                                <a id="globalNav-hospital-marshfieldMedicalCenter"
+                                   href="/locations/centers/marshfield%20medical%20center">Marshfield Medical Center</a>
                             </li>
                             <li>
-                                <a href="/locations/centers/children's%20hospital">Marshfield Children's Hospital</a>
+                                <a id="globalNav-hospital-marshfieldChildrensHospital"
+                                   href="/locations/centers/children's%20hospital">Marshfield Children's Hospital</a>
                             </li>
                             <li>
-                                <a href="http://ministryhealth.org/FH/home.nws" target="_blank">Flambeau Hospital - Park
+                                <a id="globalNav-hospital-flambeauHospital" href="http://ministryhealth.org/FH/home.nws"
+                                   target="_blank">Flambeau Hospital - Park
                                     Falls</a>
                             </li>
                             <li>
-                                <a href="https://www.lakeviewmedical.com" target="_blank">Lakeview Medical Center - Rice
+                                <a id="globalNav-hospital-lakeviewMedicalCenter" href="https://www.lakeviewmedical.com"
+                                   target="_blank">Lakeview Medical Center - Rice
                                     Lake</a>
                             </li>
                         </ul>
                     </li>
                     <!--CLINIC LINKS-->
-                    <li class="dir locations"><a class="heading" href="#">Clinics</a>
+                    <li class="dir locations"><a id="globalNav-clinicsHeading" class="heading" href="#">Clinics</a>
                         <ul>
                             <li>
-                                <a href="/locations/centers/eau claire center">Eau Claire Center</a>
+                                <a id="globalNav-clinic-eauClairCenter" href="/locations/centers/eau claire center">Eau
+                                    Claire Center</a>
                             </li>
                             <li>
-                                <a href="/locations/centers/wausau center">Wausau Center</a>
+                                <a id="globalNav-clinic-wausauCenter" href="/locations/centers/wausau center">Wausau
+                                    Center</a>
                             </li>
                             <li>
-                                <a href="/locations/centers/marshfield center">Marshfield Center</a>
+                                <a id="globalNav-clinic-marshfieldCenter" href="/locations/centers/marshfield center">Marshfield
+                                    Center</a>
                             </li>
                             <li>
-                                <a href="/locations/centers/weston center">Weston Center</a>
+                                <a id="globalNav-clinic-westonCenter" href="/locations/centers/weston center">Weston
+                                    Center</a>
                             </li>
                             <li>
-                                <a href="/locations/centers/stevens point center">Stevens Point Center</a>
+                                <a id="globalNav-clinic-stevensPointCenter"
+                                   href="/locations/centers/stevens point center">Stevens Point Center</a>
                             </li>
                             <li>
-                                <a href="/locations#clinics">See all &gt;</a>
+                                <a id="globalNav-clinic-seeAll" href="/locations#clinics">See all &gt;</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
             </li>
 
-            <li class="hasKids"><a href="#">Doctors</a>
+            <li class="hasKids"><a id="globalNav-doctorsButton" href="#">Doctors</a>
                 <ul class="findADoctor">
                     <li>
                         <p class="heading">Quick Doctor Search</p>
                         <p>Type a condition, name, specialty, or location.</p>
                         <div class="doc-form-container">
-                                <input class="test-input" id="docSearchInput"  name="docSearchInput" placeholder="Search"
-                                       title="search text box" type="text"/>
-                                <button class="doc-test-button" type="submit">SEARCH</button>
+                            <input class="test-input" id="docSearchInput" name="docSearchInput" placeholder="Search"
+                                   title="search text box" type="text"/>
+                            <button id="docSearchButton" class="doc-test-button" type="submit">SEARCH</button>
                         </div>
                     </li>
                     <li>
                         <p class="heading">Select a specialty</p>
                         <ul class="home-specialties">
-                            <li><a href="/Doctors/Search/?k=Allergy and Asthma">Allergy and Asthma</a>
-                                <a href="/Doctors/Search/?k=Anesthesia">Anesthesia</a>
-                                <a href="/Doctors/Search/?k=Audiology">Audiology</a>
-                                <a href="/Doctors/Search/?k=Bariatric Surgery">Bariatric Surgery</a>
-                                <a href="/Doctors/Search/?k=Cardiology">Cardiology (Heart Care)</a>
-                                <a href="/Doctors/Search/?k=Dental">Dental</a>
-                                <a href="/Doctors/Search/?k=Dermatology">Dermatology</a>
-                                <a href="/Doctors/Search/?k=Ear Nose and Throat (ENT)">Ear Nose and Throat (ENT)</a>
-                                <a href="/Doctors/Search/?k=Emergency Medicine">Emergency Medicine</a>
-                                <a href="/Doctors/Search/?k=Endocrinology">Endocrinology (Diabetes and
-                                    Metabolism)</a>
-                                <a href="/Doctors/Search/?k=Family Medicine">Family Medicine</a>
-                                <a href="/Doctors/Search/?k=Gastroenterology">Gastroenterology (Digestive Care)</a>
-                                <a href="/Doctors/Search/?k=General Surgery">General Surgery</a>
-                                <a href="/Doctors/Search/?k=Genetic Services">Genetic Services</a>
-                                <a href="/Doctors/Search/?k=Hospitalist">Hospitalists (Hospital Care)</a>
+                            <li><a id="globalNav-specialties-AllergyandAsthma" href="/Doctors/Search/?k=Allergy and Asthma">Allergy and Asthma</a>
+                                <a id="globalNav-specialties-Anesthesia" href="/Doctors/Search/?k=Anesthesia">Anesthesia</a>
+                                <a id="globalNav-specialties-Audiology" href="/Doctors/Search/?k=Audiology">Audiology</a>
+                                <a id="globalNav-specialties-BariatricSurgery" href="/Doctors/Search/?k=Bariatric Surgery">Bariatric Surgery</a>
+                                <a id="globalNav-specialties-CardiologyHeartCare" href="/Doctors/Search/?k=Cardiology">Cardiology (Heart Care)</a>
+                                <a id="globalNav-specialties-Dental" href="/Doctors/Search/?k=Dental">Dental</a>
+                                <a id="globalNav-specialties-Dermatology" href="/Doctors/Search/?k=Dermatology">Dermatology</a>
+                                <a id="globalNav-specialties-EarNoseandThroatENT" href="/Doctors/Search/?k=Ear Nose and Throat (ENT)">Ear Nose and Throat (ENT)</a>
+                                <a id="globalNav-specialties-EmergencyMedicine" href="/Doctors/Search/?k=Emergency Medicine">Emergency Medicine</a>
+                                <a id="globalNav-specialties-EndocrinologyDiabetesandMetabolism" href="/Doctors/Search/?k=Endocrinology">Endocrinology (Diabetes and Metabolism)</a>
+                                <a id="globalNav-specialties-FamilyMedicine" href="/Doctors/Search/?k=Family Medicine">Family Medicine</a>
+                                <a id="globalNav-specialties-GastroenterologyDigestiveCare" href="/Doctors/Search/?k=Gastroenterology">Gastroenterology (Digestive Care)</a>
+                                <a id="globalNav-specialties-GeneralSurgery" href="/Doctors/Search/?k=General Surgery">General Surgery</a>
+                                <a id="globalNav-specialties-GeneticServices" href="/Doctors/Search/?k=Genetic Services">Genetic Services</a>
+                                <a id="globalNav-specialties-HospitalistsHospitalCare" href="/Doctors/Search/?k=Hospitalist">Hospitalists (Hospital Care)</a>
                             </li>
                             <li>
-                                <a href="/Doctors/Search/?k=Infectious Diseases">Infectious Diseases</a>
-                                <a href="/Doctors/Search/?k=Internal Medicine">Internal Medicine</a>
-                                <a href="/Doctors/Search/?k=Nephrology">Nephrology (Kidney Care)</a>
-                                <a href="/Doctors/Search/?k=Neurology">Neurosciences (Neurology)</a>
-                                <a href="/Doctors/Search/?k=Obstetrics and Gynecology">Obstetrics and Gynecology
-                                    (OB/GYN)</a>
-                                <a href="/Doctors/Search/?k=Occupational Health">Occupational Health</a>
-                                <a href="/Doctors/Search/?k=Oncology">Oncology (Cancer Care)</a>
-                                <a href="/Doctors/Search/?k=Ophthalmology and Optometry">Ophthalmology and Optometry
-                                    (Eye Care)</a>
-                                <a href="/Doctors/Search/?k=Oral and Maxillofacial Surgery">Oral and
-                                    Maxillofacial Surgery</a>
-                                <a href="/Doctors/Search/?k=Orthopedic Surgery">Orthopedic
-                                    Surgery</a>
-                                <a href="/Doctors/Search/?k=Pain Management">Pain Management</a>
-                                <a href="/Doctors/Search/?k=Palliative Care">Palliative Medicine</a>
-                                <a href="/Doctors/Search/?k=Pediatrics">Pediatrics</a>
-                                <a href="/Doctors/Search/?k=Physical and Occupational Therapy">Physical and
-                                    Occupational Therapy</a>
-                                <a href="/Doctors/Search/?k=Physical Medicine and Rehabilitation">Physical Medicine and
-                                    Rehabilitation</a>
+                                <a id="globalNav-specialties-InfectiousDiseases" href="/Doctors/Search/?k=Infectious Diseases">Infectious Diseases</a>
+                                <a id="globalNav-specialties-InternalMedicine" href="/Doctors/Search/?k=Internal Medicine">Internal Medicine</a>
+                                <a id="globalNav-specialties-NephrologyKidneyCare" href="/Doctors/Search/?k=Nephrology">Nephrology (Kidney Care)</a>
+                                <a id="globalNav-specialties-NeurosciencesNeurology" href="/Doctors/Search/?k=Neurology">Neurosciences (Neurology)</a>
+                                <a id="globalNav-specialties-ObstetricsandGynecologyOBGYN" href="/Doctors/Search/?k=Obstetrics and Gynecology">Obstetrics and Gynecology (OB/GYN)</a>
+                                <a id="globalNav-specialties-OccupationalHealth" href="/Doctors/Search/?k=Occupational Health">Occupational Health</a>
+                                <a id="globalNav-specialties-OncologyCancerCare" href="/Doctors/Search/?k=Oncology">Oncology (Cancer Care)</a>
+                                <a id="globalNav-specialties-OphthalmologyandOptometryEyeCare" href="/Doctors/Search/?k=Ophthalmology and Optometry">Ophthalmology and Optometry (Eye Care)</a>
+                                <a id="globalNav-specialties-OralandMaxillofacialSurgery" href="/Doctors/Search/?k=Oral and Maxillofacial Surgery">Oral and Maxillofacial Surgery</a>
+                                <a id="globalNav-specialties-OrthopedicSurgery" href="/Doctors/Search/?k=Orthopedic Surgery">Orthopedic Surgery</a>
+                                <a id="globalNav-specialties-PainManagement" href="/Doctors/Search/?k=Pain Management">Pain Management</a>
+                                <a id="globalNav-specialties-PalliativeMedicine" href="/Doctors/Search/?k=Palliative Care">Palliative Medicine</a>
+                                <a id="globalNav-specialties-Pediatrics" href="/Doctors/Search/?k=Pediatrics">Pediatrics</a>
+                                <a id="globalNav-specialties-PhysicalandOccupationalTherapy" href="/Doctors/Search/?k=Physical and Occupational Therapy">Physical and Occupational Therapy</a>
+                                <a id="globalNav-specialties-PhysicalMedicineandRehabilitation" href="/Doctors/Search/?k=Physical Medicine and Rehabilitation">Physical Medicine and Rehabilitation</a>
                             </li>
                             <li>
-                                <a href="/Doctors/Search/?k=Plastic and Cosmetic Surgery">Plastic and Cosmetic
-                                    Surgery</a>
-                                <a href="/Doctors/Search/?k=Podiatry">Podiatry</a>
-                                <a href="/Doctors/Search/?k=Primary Care">Primary Care</a>
-                                <a href="/Doctors/Search/?k=Psychiatry and Psychology">Psychiatry and Psychology</a>
-                                <a href="/Doctors/Search/?k=Pulmonary Medicine">Pulmonary Medicine (Lung Care)</a>
-                                <a href="/Doctors/Search/?k=Radiology">Radiology</a>
-                                <a href="/Doctors/Search/?k=Rheumatology">Rheumatology and Arthritis Care</a>
-                                <a href="/Doctors/Search/?k=Sleep Medicine">Sleep Medicine</a>
-                                <a href="/Doctors/Search/?k=Sports Medicine">Sports Medicine</a>
-                                <a href="/Doctors/Search/?k=Urgent Care">Urgent Care</a>
-                                <a href="/Doctors/Search/?k=Urology">Urology</a>
-                                <a href="/Doctors/Search/?k=Vascular Surgery">Vascular Surgery</a>
-                                <a href="/Doctors/Search/?k=Wound Healing">Wound Healing</a>
+                                <a id="globalNav-specialties-PlasticandCosmeticSurgery" href="/Doctors/Search/?k=Plastic and Cosmetic Surgery">Plastic and Cosmetic Surgery</a>
+                                <a id="globalNav-specialties-Podiatry" href="/Doctors/Search/?k=Podiatry">Podiatry</a>
+                                <a id="globalNav-specialties-PrimaryCare" href="/Doctors/Search/?k=Primary Care">Primary Care</a>
+                                <a id="globalNav-specialties-PsychiatryandPsychology" href="/Doctors/Search/?k=Psychiatry and Psychology">Psychiatry and Psychology</a>
+                                <a id="globalNav-specialties-PulmonaryMedicineLungCare" href="/Doctors/Search/?k=Pulmonary Medicine">Pulmonary Medicine (Lung Care)</a>
+                                <a id="globalNav-specialties-Radiology" href="/Doctors/Search/?k=Radiology">Radiology</a>
+                                <a id="globalNav-specialties-RheumatologyandArthritisCare" href="/Doctors/Search/?k=Rheumatology">Rheumatology and Arthritis Care</a>
+                                <a id="globalNav-specialties-SleepMedicine" href="/Doctors/Search/?k=Sleep Medicine">Sleep Medicine</a>
+                                <a id="globalNav-specialties-SportsMedicine" href="/Doctors/Search/?k=Sports Medicine">Sports Medicine</a>
+                                <a id="globalNav-specialties-UrgentCare" href="/Doctors/Search/?k=Urgent Care">Urgent Care</a>
+                                <a id="globalNav-specialties-Urology" href="/Doctors/Search/?k=Urology">Urology</a>
+                                <a id="globalNav-specialties-VascularSurgery" href="/Doctors/Search/?k=Vascular Surgery">Vascular Surgery</a>
+                                <a id="globalNav-specialties-WoundHealing" href="/Doctors/Search/?k=Wound Healing">Wound Healing</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li><a href="/appointments">Request Appointment</a></li>
-            <li><a href="/MyMarshfieldClinic">Sign In/Register</a></li>
+            <li><a id="globalNav-requestAppointment" href="/appointments">Request Appointment</a></li>
+            <li><a id="globalNav-myMarshfieldClinic" href="/MyMarshfieldClinic">My Marshfield Clinic</a></li>
         </ul>
         <div class="new-form-container">
-                <input class="test-input" id="newSearchInput" name="newSearchInput" placeholder="Search" title="search text box" type="text"/>
-                <button class="header-test-button" type="submit">SEARCH</button>
+            <input class="test-input" id="newSearchInput" name="newSearchInput" placeholder="Search"
+                   title="search text box" type="text"/>
+            <button id="newSearchButton" class="header-test-button" type="submit">SEARCH</button>
         </div>
     </nav>
-    <div class="new-quick-tasks"><a href="/care-my-way">contact care my way</a><a href="/Patient-Resources/billing">pay
-        a bill</a><a href="/renewprescription">refill prescriptions</a></div>
+    <div class="new-quick-tasks"><a id="globalSubNav-contactCareMyWay" href="/care-my-way">contact care my way</a><a id="globalSubNav-payABill" href="/Patient-Resources/billing">pay a bill</a><a id="globalSubNav-refillPrescription" href="/renewprescription">refill prescriptions</a></div>
 </div>
 
 <!-- END NEW HEADER -->
 
 <script type="text/javascript">
-    $("a[href^='#']").off();
     $('html').click(function () {
         $('.top-level-nav > li.hasKids.active').removeClass('active');
     });
@@ -615,24 +621,24 @@
         }
     });
 
-    $(document).on('click', '.header-test-button', function(event){
+    $(document).on('click', '.header-test-button', function (event) {
         event.preventDefault();
         window.location = '/Search/?k=' + $('#newSearchInput').val();
     });
-    $(document).on('keyup', '#newSearchInput', function(event){
+    $(document).on('keyup', '#newSearchInput', function (event) {
         event.preventDefault();
-        if(event.keyCode === '13'){
+        if (event.keyCode === '13') {
             window.location = '/Search/?k=' + $('#newSearchInput').val();
         }
     });
 
-    $(document).on('click', '.doc-test-button', function(event){
+    $(document).on('click', '.doc-test-button', function (event) {
         event.preventDefault();
         window.location = '/doctors/search/?k=' + $('#docSearchInput').val();
     });
-    $(document).on('keyup', '#docSearchInput', function(event){
+    $(document).on('keyup', '#docSearchInput', function (event) {
         event.preventDefault();
-        if(event.keyCode === '13'){
+        if (event.keyCode === '13') {
             window.location = '/doctors/search/?k=' + $('#docSearchInput').val();
         }
     });
