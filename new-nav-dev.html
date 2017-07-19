@@ -323,7 +323,17 @@
         .new-quick-tasks a:last-child {
             border-right: none;
         }
-
+        a#globalNav-myMarshfieldClinic {
+            position: relative;
+        }
+        a#globalNav-myMarshfieldClinic:before {
+            content: "Sign In";
+            position: absolute;
+            bottom: 18px;
+            font-size: 14px;
+            color: #a40046;
+            font-weight: 300;
+        }
         @media screen and (max-width: 930px) {
             #primary_nav_wrap ul ul li {
                 width: 100%;
