@@ -635,6 +635,16 @@
         event.preventDefault();
         console.log(event);
         if($('#docSearchInput').val() !== ''){
+            //  set tracking vars
+            var s=s_gi(s_account);
+            s.linkTrackVars='pageName,eVar31,events';
+            s.linkTrackEvents='event25';
+            s.events='event25';
+            s.pageName= s_pageName;
+            s.eVar31='docSearchButton';
+            s.tl(this,'o','button name');
+
+            // send to search
             window.location = '/doctors/search/?k=' + $('#docSearchInput').val();
         }
 
@@ -646,6 +656,16 @@
     $(document).on('keyup', '#docSearchInput', function (event) {
         event.preventDefault();
         if (event.keyCode === 13 && $('#docSearchInput').val() !== '') {
+            //  set tracking vars
+            var s=s_gi(s_account);
+            s.linkTrackVars='pageName,eVar31,events';
+            s.linkTrackEvents='event25';
+            s.events='event25';
+            s.pageName= s_pageName;
+            s.eVar31='docSearchInput';
+            s.tl(this,'o','button name');
+
+            // send to search
             window.location = '/doctors/search/?k=' + $('#docSearchInput').val();
         }
     });
@@ -653,6 +673,16 @@
     $('.header-test-button').click(function (event) {
         event.preventDefault();
         if($('#newSearchInput').val() !== ''){
+            //  set tracking vars
+            var s=s_gi(s_account);
+            s.linkTrackVars='pageName,eVar31,events';
+            s.linkTrackEvents='event25';
+            s.events='event25';
+            s.pageName= s_pageName;
+            s.eVar31='newSearchButton';
+            s.tl(this,'o','button name');
+
+            // send to search
             window.location = '/Search/?k=' + $('#newSearchInput').val();
         }
 
@@ -663,6 +693,16 @@
     $(document).on('keyup', '#newSearchInput', function (event) {
         event.preventDefault();
         if (event.keyCode === 13 && $('#newSearchInput').val() !== '') {
+            //  set tracking vars
+            var s=s_gi(s_account);
+            s.linkTrackVars='pageName,eVar31,events';
+            s.linkTrackEvents='event25';
+            s.events='event25';
+            s.pageName= s_pageName;
+            s.eVar31='newSearchInput';
+            s.tl(this,'o','button name');
+
+            // send to search
             window.location = '/Search/?k=' + $('#newSearchInput').val();
         }
     });
