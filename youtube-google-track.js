@@ -227,25 +227,25 @@
                     if(percentComplete > 25 && percentageHasBeenViewed[0] === 0){
                         percentageHasBeenViewed[0] = 1;
                         if (typeof ga === 'function') {
-                            ga('send', 'event', 'video', 'watch', player.getVideoData().title, 25);
+                            ga('send', 'event', 'video', 'progress', player.getVideoData().title);
                         }
                     }
                     if(percentComplete > 50 && percentageHasBeenViewed[1] === 0){
                         percentageHasBeenViewed[1] = 1;
                         if (typeof ga === 'function') {
-                            ga('send', 'event', 'video', 'watch', player.getVideoData().title, 50);
+                            ga('send', 'event', 'video', 'progress', player.getVideoData().title);
                         }
                     }
                     if(percentComplete > 75 && percentageHasBeenViewed[2] === 0){
                         percentageHasBeenViewed[2] = 1;
                         if (typeof ga === 'function') {
-                            ga('send', 'event', 'video', 'watch', player.getVideoData().title, 75);
+                            ga('send', 'event', 'video', 'progress', player.getVideoData().title);
                         }
                     }
                     if(percentComplete > 99 && percentageHasBeenViewed[3] === 0){
                         percentageHasBeenViewed[3] = 1;
                         if (typeof ga === 'function') {
-                            ga('send', 'event', 'video', 'watch', player.getVideoData().title, 100);
+                            ga('send', 'event', 'video', 'progress', player.getVideoData().title);
                         }
                     }
                 }, 100)
