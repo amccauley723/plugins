@@ -1,0 +1,411 @@
+{
+    "experienceId": "heartToHeart123",
+    "socialBadge": true,
+    "socialBadgeNoImage": "img/Earn-Social-Butterfly-Badge-before.png",
+    "socialBadgeYesImage": "img/Social-Butterfly-Badge-after.png",
+    "completionBadge": true,
+    "completionBadgeNoImage": "img/Earn-Heart-to-Heart-Badge-before.png",
+    "completionBadgeYesImage": "img/Heart-to-Heart-Badge-after.png",
+    "experienceTitle": "Heart to Heart Challenge",
+    "videos": [
+        {
+            "videoEpisodeName": "Eating things that won't kill you",
+            "videoYoutubeId": "Of8vdVjtOzc",
+            "videoBadgeNo": "img/Earn-Apple-a-Day-Badge-before.png",
+            "videoBadgeYes": "img/Apple-a-Day-Badge-after.png",
+            "videoQuiz": [
+                {
+                    "question": "If you have health problems, which of the following will your doctor probably try to limit for you?",
+                    "answers": [
+                        [
+                            "Vegetables",
+                            0
+                        ],
+                        [
+                            "Salt",
+                            1
+                        ],
+                        [
+                            "Fish",
+                            0
+                        ],
+                        [
+                            "Fruit",
+                            0
+                        ],
+                        [
+                            "None of the above",
+                            0
+                        ]
+                    ]
+                },
+                {
+                    "question": "Which of the following statements is true?",
+                    "answers": [
+                        [
+                            "Any amount of salt is bad for you",
+                            0
+                        ],
+                        [
+                            "Your body doesn’t need salt",
+                            0
+                        ],
+                        [
+                            "Processed foods have very little salt in them",
+                            0
+                        ],
+                        [
+                            "Most processed foods have a lot of salt in them",
+                            1
+                        ],
+                        [
+                            "All of the above",
+                            0
+                        ]
+                    ]
+                },
+                {
+                    "question": "Which of the following things increases cholesterol?",
+                    "answers": [
+                        [
+                            "Vitamins",
+                            0
+                        ],
+                        [
+                            "Minerals",
+                            0
+                        ],
+                        [
+                            "Sugar",
+                            0
+                        ],
+                        [
+                            "Trans fats",
+                            1
+                        ],
+                        [
+                            "None of the above",
+                            0
+                        ]
+                    ]
+                },
+                {
+                    "question": "Too much sugar can cause which of the following problems?",
+                    "answers": [
+                        [
+                            "Diabetes",
+                            1
+                        ],
+                        [
+                            "Low blood sugar",
+                            0
+                        ],
+                        [
+                            "Trench foot",
+                            0
+                        ],
+                        [
+                            "Chicken pox",
+                            0
+                        ],
+                        [
+                            "None of the above",
+                            0
+                        ]
+                    ]
+                },
+                {
+                    "question": "If the Heart-to-Heart Kid does another video series, what health topic would you like to see him talk about?",
+                    "answers": [
+                        [
+                            "Sports medicine--Orthopedics",
+                            1
+                        ],
+                        [
+                            "Infectious diseases",
+                            1
+                        ],
+                        [
+                            "Cancer",
+                            1
+                        ],
+                        [
+                            "Allergies and Asthma",
+                            1
+                        ],
+                        [
+                            "Pediatrics",
+                            1
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "videoEpisodeName": "Hydration for your heart",
+            "videoYoutubeId": "vadhmAl1xrk",
+            "videoBadgeNo": "img/Earn-Water-Warrior-Badge-before.png",
+            "videoBadgeYes": "img/Water-Warrior-Badge-after.png",
+            "videoQuiz": [
+                {
+                    "question": "do you know the answer to question one?",
+                    "answers": [
+                        [
+                            "answer one",
+                            0
+                        ],
+                        [
+                            "answer two",
+                            0
+                        ],
+                        [
+                            "answer three",
+                            1
+                        ],
+                        [
+                            "answer four",
+                            0
+                        ],
+                        [
+                            "answer five",
+                            0
+                        ]
+                    ]
+                },
+                {
+                    "question": "do you know the answer to question two?",
+                    "answers": [
+                        [
+                            "answer one",
+                            1
+                        ],
+                        [
+                            "answer two",
+                            0
+                        ],
+                        [
+                            "answer three",
+                            0
+                        ],
+                        [
+                            "answer four",
+                            0
+                        ],
+                        [
+                            "answer five",
+                            0
+                        ]
+                    ]
+                },
+                {
+                    "question": "do you know the answer to question three?",
+                    "answers": [
+                        [
+                            "answer one",
+                            0
+                        ],
+                        [
+                            "answer two",
+                            0
+                        ],
+                        [
+                            "answer three",
+                            0
+                        ],
+                        [
+                            "answer four",
+                            1
+                        ],
+                        [
+                            "answer five",
+                            0
+                        ]
+                    ]
+                },
+                {
+                    "question": "do you know the answer to question four?",
+                    "answers": [
+                        [
+                            "answer one",
+                            0
+                        ],
+                        [
+                            "answer two",
+                            0
+                        ],
+                        [
+                            "answer three",
+                            1
+                        ],
+                        [
+                            "answer four",
+                            0
+                        ],
+                        [
+                            "answer five",
+                            0
+                        ]
+                    ]
+                },
+                {
+                    "question": "do you know the answer to question five?",
+                    "answers": [
+                        [
+                            "answer one",
+                            0
+                        ],
+                        [
+                            "answer two",
+                            0
+                        ],
+                        [
+                            "answer three",
+                            0
+                        ],
+                        [
+                            "answer four",
+                            0
+                        ],
+                        [
+                            "answer five",
+                            1
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "videoEpisodeName": "Exercising to keep your heart healthy",
+            "videoYoutubeId": "v9dvF5e4HT4",
+            "videoBadgeNo": "img/Earn-Pump-it-Up-Badge-before.png",
+            "videoBadgeYes": "img/Pump-it-Up-Badge-after.png",
+            "videoQuiz": [
+                {
+                    "question": "do you know the answer to question one?",
+                    "answers": [
+                        [
+                            "answer one",
+                            0
+                        ],
+                        [
+                            "answer two",
+                            0
+                        ],
+                        [
+                            "answer three",
+                            1
+                        ],
+                        [
+                            "answer four",
+                            0
+                        ],
+                        [
+                            "answer five",
+                            0
+                        ]
+                    ]
+                },
+                {
+                    "question": "do you know the answer to question two?",
+                    "answers": [
+                        [
+                            "answer one",
+                            1
+                        ],
+                        [
+                            "answer two",
+                            0
+                        ],
+                        [
+                            "answer three",
+                            0
+                        ],
+                        [
+                            "answer four",
+                            0
+                        ],
+                        [
+                            "answer five",
+                            0
+                        ]
+                    ]
+                },
+                {
+                    "question": "do you know the answer to question three?",
+                    "answers": [
+                        [
+                            "answer one",
+                            0
+                        ],
+                        [
+                            "answer two",
+                            0
+                        ],
+                        [
+                            "answer three",
+                            0
+                        ],
+                        [
+                            "answer four",
+                            1
+                        ],
+                        [
+                            "answer five",
+                            0
+                        ]
+                    ]
+                },
+                {
+                    "question": "do you know the answer to question four?",
+                    "answers": [
+                        [
+                            "answer one",
+                            0
+                        ],
+                        [
+                            "answer two",
+                            0
+                        ],
+                        [
+                            "answer three",
+                            1
+                        ],
+                        [
+                            "answer four",
+                            0
+                        ],
+                        [
+                            "answer five",
+                            0
+                        ]
+                    ]
+                },
+                {
+                    "question": "do you know the answer to question five?",
+                    "answers": [
+                        [
+                            "answer one",
+                            0
+                        ],
+                        [
+                            "answer two",
+                            0
+                        ],
+                        [
+                            "answer three",
+                            0
+                        ],
+                        [
+                            "answer four",
+                            0
+                        ],
+                        [
+                            "answer five",
+                            1
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+}
