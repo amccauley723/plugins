@@ -1,18 +1,18 @@
 {
     "experienceId": "heartToHeart123",
     "socialBadge": true,
-    "socialBadgeNoImage": "img/Earn-Social-Butterfly-Badge-before.png",
-    "socialBadgeYesImage": "img/Social-Butterfly-Badge-after.png",
+    "socialBadgeNoImage": "https://www.marshfieldclinic.org/imagecatalog/Logos/Earn-Social-Butterfly-Badge-before.png",
+    "socialBadgeYesImage": "https://www.marshfieldclinic.org/imagecatalog/Logos/Social-Butterfly-Badge-after.png",
     "completionBadge": true,
-    "completionBadgeNoImage": "img/Earn-Heart-to-Heart-Badge-before.png",
-    "completionBadgeYesImage": "img/Heart-to-Heart-Badge-after.png",
+    "completionBadgeNoImage": "https://www.marshfieldclinic.org/imagecatalog/Logos/Earn-Heart-to-Heart-Badge-before.png",
+    "completionBadgeYesImage": "https://www.marshfieldclinic.org/imagecatalog/Logos/Heart-to-Heart-Badge-after.png",
     "experienceTitle": "Heart to Heart Challenge",
     "videos": [
         {
             "videoEpisodeName": "Eating things that won't kill you",
             "videoYoutubeId": "Of8vdVjtOzc",
-            "videoBadgeNo": "img/Earn-Apple-a-Day-Badge-before.png",
-            "videoBadgeYes": "img/Apple-a-Day-Badge-after.png",
+            "videoBadgeNo": "https://www.marshfieldclinic.org/imagecatalog/Logos/Earn-Apple-a-Day-Badge-before.png",
+            "videoBadgeYes": "https://www.marshfieldclinic.org/imagecatalog/Logos/Apple-a-Day-Badge-after.png",
             "videoQuiz": [
                 {
                     "question": "If you have health problems, which of the following will your doctor probably try to limit for you?",
@@ -144,111 +144,99 @@
         {
             "videoEpisodeName": "Hydration for your heart",
             "videoYoutubeId": "vadhmAl1xrk",
-            "videoBadgeNo": "img/Earn-Water-Warrior-Badge-before.png",
-            "videoBadgeYes": "img/Water-Warrior-Badge-after.png",
+            "videoBadgeNo": "https://www.marshfieldclinic.org/imagecatalog/Logos/Earn-Water-Warrior-Badge-before.png",
+            "videoBadgeYes": "https://www.marshfieldclinic.org/imagecatalog/Logos/Water-Warrior-Badge-after.png",
             "videoQuiz": [
                 {
-                    "question": "do you know the answer to question one?",
+                    "question": "1)	Which of the following statements is true:",
                     "answers": [
                         [
-                            "answer one",
+                            "Drinking just two cups of coffee per day causes heart disease",
                             0
                         ],
                         [
-                            "answer two",
+                            "Drinking one glass of red wine per day causes heart disease",
                             0
                         ],
                         [
-                            "answer three",
+                            "Drinking sugary juices and soda is healthier than drinking water",
+                            0
+                        ],
+                        [
+                            "Too many sugar drinks can increase your risk of health problems",
                             1
                         ],
                         [
-                            "answer four",
-                            0
-                        ],
-                        [
-                            "answer five",
+                            "None of the above",
                             0
                         ]
                     ]
                 },
                 {
-                    "question": "do you know the answer to question two?",
+                    "question": "Drinking too much alcohol can shrink your brain.",
                     "answers": [
                         [
-                            "answer one",
+                            "True",
                             1
                         ],
                         [
-                            "answer two",
-                            0
-                        ],
-                        [
-                            "answer three",
-                            0
-                        ],
-                        [
-                            "answer four",
-                            0
-                        ],
-                        [
-                            "answer five",
+                            "False",
                             0
                         ]
                     ]
                 },
                 {
-                    "question": "do you know the answer to question three?",
+                    "question": "Proper hydration is good for",
                     "answers": [
                         [
-                            "answer one",
-                            0
-                        ],
-                        [
-                            "answer two",
-                            0
-                        ],
-                        [
-                            "answer three",
-                            0
-                        ],
-                        [
-                            "answer four",
+                            "All your body’s organs and systems",
                             1
                         ],
                         [
-                            "answer five",
+                            "Nothing—hydration isn’t healthy",
+                            0
+                        ],
+                        [
+                            "Just athletes—no one else needs to hydrate",
+                            0
+                        ],
+                        [
+                            "Preventing hair loss",
+                            0
+                        ],
+                        [
+                            "None of the above",
                             0
                         ]
                     ]
                 },
                 {
-                    "question": "do you know the answer to question four?",
+                    "question": "The number of 8 oz glasses of water you should drink per day is:",
                     "answers": [
                         [
-                            "answer one",
+                            "None—you should only drink 4 oz glasses of water",
                             0
                         ],
                         [
-                            "answer two",
+                            "6-8",
                             0
                         ],
                         [
-                            "answer three",
+                            "27-30",
                             1
                         ],
                         [
-                            "answer four",
+                            "1",
                             0
                         ],
                         [
-                            "answer five",
+                            "None of the above",
                             0
                         ]
                     ]
                 },
                 {
-                    "question": "do you know the answer to question five?",
+                    "question": "Different marketing question.",
                     "answers": [
                         [
                             "answer one",
@@ -277,11 +265,87 @@
         {
             "videoEpisodeName": "Exercising to keep your heart healthy",
             "videoYoutubeId": "v9dvF5e4HT4",
-            "videoBadgeNo": "img/Earn-Pump-it-Up-Badge-before.png",
-            "videoBadgeYes": "img/Pump-it-Up-Badge-after.png",
+            "videoBadgeNo": "https://www.marshfieldclinic.org/imagecatalog/Logos/Earn-Pump-it-Up-Badge-before.png",
+            "videoBadgeYes": "https://www.marshfieldclinic.org/imagecatalog/Logos/Pump-it-Up-Badge-after.png",
             "videoQuiz": [
                 {
-                    "question": "do you know the answer to question one?",
+                    "question": "Being sedentary is healthier than walking or exercising?",
+                    "answers": [
+                        [
+                            "True",
+                            0
+                        ],
+                        [
+                            "False",
+                            1
+                        ]
+                    ]
+                },
+                {
+                    "question": "If you’ve never exercised before, starting slowly is a good idea.",
+                    "answers": [
+                        [
+                            "True",
+                            1
+                        ],
+                        [
+                            "False",
+                            0
+                        ]
+                    ]
+                },
+                {
+                    "question": "Which of the following is considered a minimum amount of healthy exercise?",
+                    "answers": [
+                        [
+                            "2-3 minutes per week",
+                            0
+                        ],
+                        [
+                            "Once a month",
+                            0
+                        ],
+                        [
+                            "30 minutes a day, several times a week",
+                            1
+                        ],
+                        [
+                            "3 hours per day, 7 days a week",
+                            0
+                        ],
+                        [
+                            "Never",
+                            0
+                        ]
+                    ]
+                },
+                {
+                    "question": "4)	With physical activity and exercise, which of the following is true?",
+                    "answers": [
+                        [
+                            "a)	Even a little bit of activity each day is better than none",
+                            0
+                        ],
+                        [
+                            "b)	Walking is one of the best activities for your body and heart",
+                            0
+                        ],
+                        [
+                            "c)	Moderate to intense workouts are bad for healthy people",
+                            0
+                        ],
+                        [
+                            "d)	Watching a football game is considered exercise",
+                            0
+                        ],
+                        [
+                            "A and B",
+                            1
+                        ]
+                    ]
+                },
+                {
+                    "question": "Different marketing question.",
                     "answers": [
                         [
                             "answer one",
@@ -293,7 +357,7 @@
                         ],
                         [
                             "answer three",
-                            1
+                            0
                         ],
                         [
                             "answer four",
@@ -301,16 +365,112 @@
                         ],
                         [
                             "answer five",
+                            1
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "videoEpisodeName": "Risks",
+            "videoYoutubeId": "v9dvF5e4HT4",
+            "videoBadgeNo": "https://www.marshfieldclinic.org/imagecatalog/Logos/Earn-Pump-it-Up-Badge-before.png",
+            "videoBadgeYes": "https://www.marshfieldclinic.org/imagecatalog/Logos/Pump-it-Up-Badge-after.png",
+            "videoQuiz": [
+                {
+                    "question": "When it comes to a health risk like heart disease, there’s nothing you can do to prevent it.",
+                    "answers": [
+                        [
+                            "True",
+                            0
+                        ],
+                        [
+                            "False",
+                            1
+                        ]
+                    ]
+                },
+                {
+                    "question": "Which of the following is a heart disease risk you can control?",
+                    "answers": [
+                        [
+                            "Smoking",
+                            0
+                        ],
+                        [
+                            "Cholesterol",
+                            0
+                        ],
+                        [
+                            "Obesity",
+                            0
+                        ],
+                        [
+                            "Lack of exercise",
+                            0
+                        ],
+                        [
+                            "All of the above",
+                            1
+                        ]
+                    ]
+                },
+                {
+                    "question": "Which of the following is a heart disease risk you can’t control?",
+                    "answers": [
+                        [
+                            "Age",
+                            0
+                        ],
+                        [
+                            "Family history",
+                            0
+                        ],
+                        [
+                            "High-fat diet",
+                            0
+                        ],
+                        [
+                            "Swimming in the ocean",
+                            1
+                        ],
+                        [
+                            "A and B",
                             0
                         ]
                     ]
                 },
                 {
-                    "question": "do you know the answer to question two?",
+                    "question": "When you have “a family history of heart disease,” it means:",
+                    "answers": [
+                        [
+                            "You’ve been talking about it with your family for a long time",
+                            0
+                        ],
+                        [
+                            "One of your ancestors was a famous heart surgeon",
+                            0
+                        ],
+                        [
+                            "Your grandparents, parents, or siblings have had heart disease",
+                            1
+                        ],
+                        [
+                            "Someone with heart disease wrote a book about your family",
+                            0
+                        ],
+                        [
+                            "All of the above",
+                            0
+                        ]
+                    ]
+                },
+                {
+                    "question": "Different marketing question.",
                     "answers": [
                         [
                             "answer one",
-                            1
+                            0
                         ],
                         [
                             "answer two",
@@ -326,62 +486,108 @@
                         ],
                         [
                             "answer five",
+                            1
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "videoEpisodeName": "Stress",
+            "videoYoutubeId": "v9dvF5e4HT4",
+            "videoBadgeNo": "https://www.marshfieldclinic.org/imagecatalog/Logos/Earn-Pump-it-Up-Badge-before.png",
+            "videoBadgeYes": "https://www.marshfieldclinic.org/imagecatalog/Logos/Pump-it-Up-Badge-after.png",
+            "videoQuiz": [
+                {
+                    "question": "All stress, even being excited about something fun, is bad for you.",
+                    "answers": [
+                        [
+                            "True",
                             0
+                        ],
+                        [
+                            "False",
+                            1
                         ]
                     ]
                 },
                 {
-                    "question": "do you know the answer to question three?",
+                    "question": "Which of the following is a healthy way to relieve stress?",
                     "answers": [
                         [
-                            "answer one",
+                            "Smoking",
                             0
                         ],
                         [
-                            "answer two",
-                            0
-                        ],
-                        [
-                            "answer three",
-                            0
-                        ],
-                        [
-                            "answer four",
+                            "Relaxation",
                             1
                         ],
                         [
-                            "answer five",
+                            "Yelling at your dog",
+                            0
+                        ],
+                        [
+                            "Thinking about other stressful subjects",
+                            0
+                        ],
+                        [
+                            "All of the above",
                             0
                         ]
                     ]
                 },
                 {
-                    "question": "do you know the answer to question four?",
+                    "question": "Which of the following is an unhealthy way to deal with stress?",
                     "answers": [
                         [
-                            "answer one",
+                            "Taking a walk",
                             0
                         ],
                         [
-                            "answer two",
+                            "Talking to a mental health professional or your doctor",
                             0
                         ],
                         [
-                            "answer three",
+                            "Yoga",
+                            0
+                        ],
+                        [
+                            "Drinking 4-6 alcoholic drinks",
                             1
                         ],
                         [
-                            "answer four",
-                            0
-                        ],
-                        [
-                            "answer five",
+                            "e)	None of the above",
                             0
                         ]
                     ]
                 },
                 {
-                    "question": "do you know the answer to question five?",
+                    "question": "Too much stress is bad for your body because:",
+                    "answers": [
+                        [
+                            "It makes your toenails grow too fast",
+                            0
+                        ],
+                        [
+                            "It makes your heart work too hard",
+                            0
+                        ],
+                        [
+                            "It makes you competitive",
+                            1
+                        ],
+                        [
+                            "It prevents you from taking a walk",
+                            0
+                        ],
+                        [
+                            "None of the above",
+                            0
+                        ]
+                    ]
+                },
+                {
+                    "question": "Different marketing question.",
                     "answers": [
                         [
                             "answer one",
